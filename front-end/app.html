@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app="SpotifyApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Spotify App</title>
+
+    <!-- VENDOR FILES -->
+    <script src="/js/jquery.js"></script>
+    <script src="/js/angular.js"></script>
+    <script src="/js/angular-route.js"></script>
+
+    <!-- APP FILES -->
+    <link rel="stylesheet" href="/app.css">
+    <script src="/app.js"></script>
+    <script src="/routes.js"></script>
+
+    <link rel="stylesheet" href="/components/nav_bar/navBarStyle.css">
+    <script src="/components/nav_bar/navBarDirective.js"></script>
+
+    <script src="/components/splash/splashController.js"></script>
+
+    <link rel="stylesheet" href="/components/results/resultsStyle.css">
+    <script src="/components/results/resultsController.js"></script>
+    <script src="/components/results/spotifyFactory.js"></script>
+  </head>
+
+  <body>
+    <navbar></navbar>
+    <div class="main-view">
+      <ng-view></ng-view>
+    </div>
+  </body>
+</html>

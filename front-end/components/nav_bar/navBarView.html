@@ -1,0 +1,11 @@
+<nav class="nav-bar" ng-cloak>
+  <form class="search-form" ng-submit="search()">
+    <input class="search-field" type="text" ng-model="query" placeholder="Search..." />
+    <div class="search-types">
+      <div ng-repeat="type in queryTypes">
+        <input type="checkbox" value="{{type.name}}" ng-model="type.selected">{{type.name}}</input>
+      </div>
+    </div>
+    <input class="search-button" type="submit" value="Search!">
+  </form>
+</nav>

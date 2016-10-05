@@ -1,0 +1,33 @@
+<div class="results-view">
+  <h1 class="results-head">Results for "{{ query }}" with types "{{types.join(', ')}}"</h1>
+
+  <h2 class="result-list-head" ng-show="tracks.items.length" ng-click="toggleList('tracks')">
+    {{tracks.showing ? '-' : '+'}} Tracks
+  </h2>
+  <ul class='tracks' ng-show="tracks.showing">
+    <li class="result" ng-repeat="track in tracks.items">
+      <img ng-src="{{ track.album.images[2].url }}" />
+      <p>{{track.name}}</p>
+    </li>
+  </ul>
+
+  <h2 class="result-list-head" ng-show="albums.items.length" ng-click="toggleList('albums')">
+    {{albums.showing ? '-' : '+'}} Albums
+  </h2>
+  <ul class='tracks' ng-show="albums.showing">
+    <li class="result" ng-repeat="album in albums.items">
+      <img ng-src="{{ album.images[2].url }}" />
+      <p>{{album.name}}</p>
+    </li>
+  </ul>
+
+  <h2 class="result-list-head" ng-show="artists.items.length" ng-click="toggleList('artists')">
+    {{artists.showing ? '-' : '+'}} Artists
+  </h2>
+  <ul class='tracks' ng-show="artists.showing">
+    <li class="result" ng-repeat="artist in artists.items">
+      <img ng-src="{{ artist.images[2].url }}" />
+      <p>{{artist.name}}</p>
+    </li>
+  </ul>
+</div>

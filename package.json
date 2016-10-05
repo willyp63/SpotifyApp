@@ -1,0 +1,15 @@
+{
+  "name": "SpotifyApp",
+  "version": "1.0.0",
+  "description": "App built on Spotify API",
+  "main": "/back-end/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node back-end/app.js"
+  },
+  "author": "Wil Pirino",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
